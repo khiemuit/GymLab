@@ -6,7 +6,7 @@ enum HomePageSection {
   timer,
   statistics,
   meal,
-  settings,
+  tip,
 }
 
 class HomeBloc extends Disposable {
@@ -22,7 +22,7 @@ class HomeBloc extends Disposable {
     'Timer',
     'Statistics',
     'Meal Plans',
-    'Settings'
+    'Tips'
   ];
   BehaviorSubject<String> _title;
   BehaviorSubject<int> _currentPage;

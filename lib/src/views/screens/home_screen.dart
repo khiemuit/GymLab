@@ -5,6 +5,7 @@ import '../layouts/muscle_options.dart';
 import '../layouts/timer_section.dart';
 import '../layouts/statistic_section.dart';
 import '../layouts/meal_section.dart';
+import '../layouts/tip_section.dart';
 import '../components/gym_icons.dart';
 import '../../blocs/home_bloc.dart';
 
@@ -48,6 +49,9 @@ class _HomeScreenState extends State<HomeScreen> {
           case HomePageSection.meal:
             child = MealSection();
             break;
+          case HomePageSection.tip:
+            child = TipSection();
+            break;
           default:
             child = Center(
               child: Text('Current Page: $currentPage'),
@@ -89,8 +93,8 @@ class _HomeScreenState extends State<HomeScreen> {
               title: Text('Meals'),
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.settings),
-              title: Text('Settings'),
+              icon: Icon(Icons.announcement),
+              title: Text('Tips'),
             ),
           ],
           currentIndex: currentPage.index,

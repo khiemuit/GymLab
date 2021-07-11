@@ -19,6 +19,7 @@ class GymIcons {
   static const _kFontFam = 'Gym';
 
   static const IconData meal = const IconData(0xe800, fontFamily: _kFontFam);
+  static const IconData tip = const IconData(0xe800, fontFamily: _kFontFam);
   static const IconData equipment = const IconData(0xe801, fontFamily: _kFontFam);
   static const IconData machine = const IconData(0xe806, fontFamily: _kFontFam);
   static const IconData bar = const IconData(0xe808, fontFamily: _kFontFam);
