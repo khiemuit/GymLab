@@ -25,18 +25,22 @@ class KnowTip extends StatelessWidget {
   Widget build(BuildContext context) {
     return TipTemplate(
       image: TipImage(
-        title: 'Know when to go heavier',
-        image: 'assets/images/meals/knowHeavier.jpg',
+        title: 'Go heavier',
+        image: 'assets/images/tips/knowHeavier.jpg',
+        
         imageBrightness: Brightness.dark,
       ),
       body: <Widget>[
         TipParagraph(description),
         TipHeader('1. How do I feel today?'),
         TipParagraph(first),
+        Image(image: AssetImage('assets/images/tips/knowHeavier1.jpg')),
         TipHeader('2. Did I finish all the reps & sets?'),
         TipParagraph(second),
+        Image(image: AssetImage('assets/images/tips/knowHeavier2.jpg')),
         TipHeader('3. How much weight should I add today?'),
         TipParagraph(third),
+        Image(image: AssetImage('assets/images/tips/knowHeavier3.jpg')),
       ],
     );
   }

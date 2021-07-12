@@ -36,18 +36,21 @@ class GettingTip extends StatelessWidget {
   Widget build(BuildContext context) {
     return TipTemplate(
       image: TipImage(
-        title: 'Getting started with weightlifting',
-        image: 'assets/images/meals/gettingStarted.jpg',
+        title: 'Getting started',
+        image: 'assets/images/tips/gettingStarted.jpg',
         imageBrightness: Brightness.dark,
       ),
       body: <Widget>[
         TipParagraph(description),
         TipHeader('1. Acquire the correct technique'),
         TipParagraph(first),
+        Image(image: AssetImage('assets/images/tips/gettingStarted1.jpg')),
         TipHeader('2. Figure out your starting weight'),
         TipParagraph(second),
+        Image(image: AssetImage('assets/images/tips/gettingStarted2.jpg')),
         TipHeader('3. Focus on steadily increasing the weight'),
         TipParagraph(third),
+        Image(image: AssetImage('assets/images/tips/gettingStarted3.jpg')),
         TipHeader('How ofter should you increase the weight?'),
         TipParagraph(third2),
         TipHeader('How much weight to add?'),

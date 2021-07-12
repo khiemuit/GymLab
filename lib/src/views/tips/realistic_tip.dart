@@ -27,20 +27,23 @@ class RealisticTip extends StatelessWidget {
   Widget build(BuildContext context) {
     return TipTemplate(
       image: TipImage(
-        title: 'How To Set Realistic Fitness Goals',
-        image: 'assets/images/meals/setRealistic.jpg',
+        title: 'Set Realistic Fitness',
+        image: 'assets/images/tips/setRealistic.jpg',
         imageBrightness: Brightness.dark,
       ),
       body: <Widget>[
         TipParagraph(description),
         TipHeader('Ultimate Goal = Several Manageable Goals'),
         TipParagraph(first),
+        Image(image: AssetImage('assets/images/tips/setRealistic1.jpg')),
         TipHeader('How to Set Short Term Goals?'),
         TipParagraph(second),
+        Image(image: AssetImage('assets/images/tips/setRealistic2.jpg')),
         TipHeader('Focus on One Goal at a Time'),
         TipParagraph(third),
         TipHeader('Start Small'),
         TipParagraph(fourth),
+        Image(image: AssetImage('assets/images/tips/setRealistic3.jpg')),
         TipHeader('Make it Measurable & Specific'),
         TipParagraph(fifth),
       ],

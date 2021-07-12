@@ -25,20 +25,23 @@ class MotivateTip extends StatelessWidget {
   Widget build(BuildContext context) {
     return TipTemplate(
       image: TipImage(
-        title: '5 practical ways to motivate yourself',
-        image: 'assets/images/meals/motivateYourself.jpg',
+        title: 'Motivate yourself',
+        image: 'assets/images/tips/motivateYourself.jpg',
         imageBrightness: Brightness.dark,
       ),
       body: <Widget>[
         TipParagraph(description),
         TipHeader('Set up your environment'),
         TipParagraph(first),
+        Image(image: AssetImage('assets/images/tips/motivateYourself1.jpg')),
         TipHeader('Track your progress'),
         TipParagraph(second),
+        Image(image: AssetImage('assets/images/tips/motivateYourself2.jpg')),
         TipHeader('Keep varying your exercises'),
         TipParagraph(third),
         TipHeader('Listen to your favorite jams or podcasts'),
         TipParagraph(fourth),
+        Image(image: AssetImage('assets/images/tips/motivateYourself3.jpg')),
         TipHeader('Spend your energy wisely'),
         TipParagraph(fifth),
       ],

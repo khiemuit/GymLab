@@ -21,6 +21,7 @@ class StatisticSection extends StatelessWidget {
             child: TabBar(
               tabs: [
                 Tab(text: "Muscle Group"),
+                //Tab(text: "Calo"),
                 Tab(text: "Activity"),
               ],
               indicatorColor: theme.primaryColor,
